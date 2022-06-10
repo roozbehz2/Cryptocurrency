@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <View
+            android:id="@+id/imgCoin"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/border_visual_shimmer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/linearParent"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintHorizontal_weight=".15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearParent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:background="@drawable/border_visual_shimmer"
+            app:layout_constraintBottom_toBottomOf="@id/imgCoin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight=".75"
+            app:layout_constraintStart_toEndOf="@id/imgCoin"
+            app:layout_constraintTop_toTopOf="@id/imgCoin">
+
+
+        <!--    <View
+                android:id="@+id/txtNameCoin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toTopOf="@id/txtFullNameCoin"
+                app:layout_constraintEnd_toStartOf="@id/txtPriceCoin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/txtPriceCoin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toTopOf="@id/txtMarketCap"
+                app:layout_constraintEnd_toStartOf="@id/txtPercentage"
+                app:layout_constraintStart_toEndOf="@id/txtNameCoin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/txtPercentage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toTopOf="@id/txtTotalVolume"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtPriceCoin"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <View
+                android:id="@+id/txtFullNameCoin"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/txtMarketCap"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtNameCoin" />
+
+            <View
+                android:id="@+id/txtMarketCap"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/txtTotalVolume"
+                app:layout_constraintStart_toEndOf="@id/txtFullNameCoin"
+                app:layout_constraintTop_toBottomOf="@id/txtPriceCoin"/>
+
+            <View
+                android:id="@+id/txtTotalVolume"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/border_visual_shimmer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/txtMarketCap"
+                app:layout_constraintTop_toBottomOf="@id/txtPercentage" />
+-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

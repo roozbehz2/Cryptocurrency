@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constParent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/imgCoin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/linearParent"
+            app:layout_constraintHorizontal_weight=".15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearParent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight=".75"
+            app:layout_constraintStart_toEndOf="@id/imgCoin"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+                <TextView
+                    android:id="@+id/txtNameCoin"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="bottom|start"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/txtPriceCoin"
+                    app:layout_constraintBottom_toTopOf="@id/txtFullNameCoin"/>
+
+                <TextView
+                    android:id="@+id/txtPriceCoin"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="bottom|end"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtNameCoin"
+                    app:layout_constraintEnd_toStartOf="@id/txtPercentage"
+                    app:layout_constraintBottom_toBottomOf="@id/txtNameCoin"
+                    />
+
+                <TextView
+                    android:id="@+id/txtPercentage"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/teal_200"
+                    android:textSize="@dimen/_14ssp"
+                    android:gravity="bottom|end"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.05"
+                    android:layout_weight="1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtPriceCoin"
+                    app:layout_constraintBottom_toBottomOf="@id/txtNameCoin"/>
+
+
+
+                <TextView
+                    android:id="@+id/txtFullNameCoin"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:textColor="@color/greysh"
+                    android:textSize="@dimen/_10ssp"
+                    android:gravity="top|start"
+                    android:letterSpacing="0.02"
+                    app:layout_constraintTop_toBottomOf="@id/txtNameCoin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/txtMarketCap"/>
+
+                <TextView
+                    android:id="@+id/txtMarketCap"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:maxLength="6"
+                    android:textColor="@color/greysh"
+                    android:textSize="@dimen/_10ssp"
+                    android:gravity="top|end"
+                    android:letterSpacing="0.05"
+                    app:layout_constraintTop_toBottomOf="@id/txtNameCoin"
+                    app:layout_constraintStart_toEndOf="@id/txtFullNameCoin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/txtTotalVolume"
+                    />
+
+                <TextView
+                    android:id="@+id/txtTotalVolume"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:maxLength="6"
+                    android:textColor="@color/greysh"
+                    android:textSize="@dimen/_10ssp"
+                    android:gravity="top|end"
+                    android:letterSpacing="0.05"
+                    app:layout_constraintTop_toBottomOf="@id/txtNameCoin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtMarketCap"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+
+<!--
+<LinearLayout
+android:id="@+id/linearParent"
+android:layout_width="0dp"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:layout_marginStart="@dimen/_3sdp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_weight=".75"
+app:layout_constraintStart_toEndOf="@id/imgCoin"
+app:layout_constraintTop_toTopOf="parent">
+
+<LinearLayout
+    android:id="@+id/linearTop"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.5"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtNameCoin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="bottom|start"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtPriceCoin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="bottom|end"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtPercentage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/teal_200"
+        android:textSize="@dimen/_14ssp"
+        android:gravity="bottom|end"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/linearBottom"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtFullNameCoin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/greysh"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="top|start"
+        android:letterSpacing="0.02"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtMarketCap"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:maxLength="6"
+        android:textColor="@color/greysh"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="top|end"
+        android:letterSpacing="0.05"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txtTotalVolume"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:maxLength="6"
+        android:textColor="@color/greysh"
+        android:textSize="@dimen/_10ssp"
+        android:gravity="top|end"
+        android:letterSpacing="0.05"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+
+</LinearLayout>-->
